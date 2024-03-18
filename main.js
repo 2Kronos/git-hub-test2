@@ -8,7 +8,7 @@ if (!webgl) {
   var deltaP = (2 * Math.PI) / 64;
   var arch = 2 * Math.PI;
   var r = 1;
-
+// comment 2 7777
   for (p = 0; p <= arch; p += deltaP) {
     x = r * Math.cos(p);
     y = r * Math.sin(p);
