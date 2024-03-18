@@ -8,7 +8,7 @@ if (!webgl) {
   var deltaP = (2 * Math.PI) / 64;
   var arch = 2 * Math.PI;
   var r = 1;
-// comment 2 7777
+// comment 2
   for (p = 0; p <= arch; p += deltaP) {
     x = r * Math.cos(p);
     y = r * Math.sin(p);
@@ -23,7 +23,7 @@ if (!webgl) {
   const buffer = webgl.createBuffer();
   webgl.bindBuffer(webgl.ARRAY_BUFFER, buffer);
   webgl.bufferData(webgl.ARRAY_BUFFER, vertices, webgl.STATIC_DRAW);
-
+// comment 3
   const vertexShader = webgl.createShader(webgl.VERTEX_SHADER);
   webgl.shaderSource(
     vertexShader,
